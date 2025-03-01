@@ -36,21 +36,26 @@ Listas (Ordenadas y Desordenadas)
 **Verificar el estado del repositorio local**
 git status
 Muestra el estado actual del repositorio, indicando qué archivos han sido modificados o están pendientes de ser confirmados.
+
 **Agregar archivos individuales o globalmente**
 git add nombre_archivo     # Agrega un solo archivo  
 git add .                  # Agrega todos los archivos modificados  
 Prepara los archivos para el commit.
+
 **Agregar comentarios al commit**
 git commit -m  "Descripción del cambio realizado"
+
 **Subir los cambios al repositorio remoto**
 git push origin main
 🔹 Sube los cambios confirmados (commit) a GitHub.
 🔹 Si trabajas en otra rama, reemplaza main con el nombre de la rama (git push origin nombre_rama).
+
 **Crear, cambiar y eliminar ramas**
 git branch nueva_rama       # Crear una nueva rama  
 git checkout nueva_rama     # Cambiar de rama  
 git branch -d nombre_rama   # Eliminar una rama  
 Para manejar múltiples versiones del código sin afectar la rama principal.
+
 **Revertir cambios a un commit específico**
 git reset --hard ID_commit   # Regresar a un commit eliminando cambios  
 git revert ID_commit         # Crear un commit que revierte cambios anteriores  
